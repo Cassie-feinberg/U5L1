@@ -3,12 +3,12 @@ public class Animal {
 
 
     //what information an animal needs
-    private String species;
-    private String name;
-    private boolean hungry;
-    private double weight;
-    private int age;
-    private String birthday;
+    protected String species;
+    protected String name;
+    protected boolean hungry;
+    protected double weight;
+    protected int age;
+    protected String birthday;
 
     //question: do you need to fill in all instance variables for a class to work? can you only fill one?
 

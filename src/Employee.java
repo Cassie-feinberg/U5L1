@@ -17,11 +17,6 @@ public class Employee {
     }
 
     public Employee(){
-        this.name = "maya";
-        this.age = 22;
-        this.fullTime = true;
-        this.manager = false;
-        this.yearsWorked = 12;
     }
 
 
@@ -47,6 +42,18 @@ public class Employee {
         return yearsWorked;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setYearsWorked(int yearsWorked) {
+        this.yearsWorked = yearsWorked;
+    }
+
     public void setManager(){
         this.manager = true;
     }
@@ -60,9 +67,18 @@ public class Employee {
     public void fired(){
         System.out.println(name + " is fired!");
     }
+    public String toString(){
+        return ("Employee " + name + " is " + age + " years old, an has worked at this zoo for " + yearsWorked + " years.");
+    }
 
     //TODO: create main method test
-
+    public static void main(String[] args) {
+        Employee mia = new Employee();
+        mia.setAge(21);
+        mia.setManager();
+        System.out.println(mia.getage());
+        System.out.println(mia);
+    }
 
 
 }
