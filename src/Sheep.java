@@ -1,4 +1,4 @@
-public class Sheep extends Animal{
+public class Sheep extends Animal {
     private String woolColor;
 
     public Sheep(String name, boolean hungry, double weight, int age, String birthday, String woolColor) {
@@ -11,7 +11,7 @@ public class Sheep extends Animal{
         this.woolColor = woolColor;
     }
 
-    public Sheep(){
+    public Sheep() {
         this.species = "Sheep";
     }
 
@@ -23,12 +23,13 @@ public class Sheep extends Animal{
         this.woolColor = woolColor;
     }
 
-    public void makeNoise(){
+    public void makeNoise() {
         System.out.println("bahhahaha");
     }
-}
 
-public static void main(String[] args){
-    Sheep jerry = new Sheep("jerry", false, 125.7, 1, "12/31/2023", "Black");
-    System.out.println(jerry);
+    public static void main(String[] args) {
+        Sheep jerry = new Sheep("jerry", false, 125.7, 1, "12/31/2023", "Black");
+        System.out.println(jerry);
+        jerry.makeNoise();
+    }
 }

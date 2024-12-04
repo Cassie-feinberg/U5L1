@@ -47,8 +47,8 @@ public class Animal {
         return hungry;
     }
 
-    public void printData(){
-        System.out.println("This is a " + species + " named " + name + " who is "+ age + " years old");
+    public String toString(){
+        return ("This is a " + species + " named " + name + " who is "+ age + " years old");
     }
 
     //what are aspects of this animal that should/could be changeable?
@@ -73,11 +73,11 @@ public class Animal {
 
     public static void main(String[] args) {
         Animal geoff = new Animal();
-        geoff.printData();
+        System.out.println(geoff);
 
         //String species, String name, boolean hungry, double weight, int age, String birthday
         Animal wolf = new Animal("wolf", "big bad", true, 150.1, 7, "the dawn of time");
-        wolf.printData();
+        System.out.println(wolf);
         System.out.println(wolf.isHungry());
 
         //what else do we need to test?

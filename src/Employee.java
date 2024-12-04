@@ -68,7 +68,7 @@ public class Employee {
         System.out.println(name + " is fired!");
     }
     public String toString(){
-        return ("Employee " + name + " is " + age + " years old, an has worked at this zoo for " + yearsWorked + " years.");
+        return ("Employee " + name + " is " + age + " years old, and has worked at this zoo for " + yearsWorked + " years");
     }
 
     //TODO: create main method test
