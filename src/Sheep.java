@@ -27,9 +27,4 @@ public class Sheep extends Animal {
         System.out.println("bahhahaha");
     }
 
-    public static void main(String[] args) {
-        Sheep jerry = new Sheep("jerry", false, 125.7, 1, "12/31/2023", "Black");
-        System.out.println(jerry);
-        jerry.makeNoise();
-    }
 }

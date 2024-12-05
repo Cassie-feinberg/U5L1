@@ -1,5 +1,5 @@
 public class Employee {
-    //TODO: create employee class variables
+
     private String name;
     private int age;
     private boolean fullTime;
@@ -7,7 +7,6 @@ public class Employee {
     private int yearsWorked;
 
 
-    //TODO: create constructors
     public Employee(String name, int age, boolean fullTime, boolean manager, int yearsWorked){
         this.name = name;
         this.age = age;
@@ -18,9 +17,6 @@ public class Employee {
 
     public Employee(){
     }
-
-
-    //TODO: create getters and setters
 
     public String getName(){
         return name;
@@ -62,27 +58,13 @@ public class Employee {
         this.fullTime = true;
     }
 
-    //TODO: any other methods?
-
     public void fired(){
         System.out.println(name + " is fired!");
     }
     public String toString(){
-        return ("Employee " + name + " is " + age + " years old, and has worked at this zoo for " + yearsWorked + " years");
+        return ("Employee " + name + " is " + age + " years old and has worked at this zoo for " + yearsWorked + " years");
     }
-
-    //TODO: create main method test
-    public static void main(String[] args) {
-        Employee mia = new Employee();
-        mia.setAge(21);
-        mia.setManager();
-        System.out.println(mia.getage());
-        System.out.println(mia);
-    }
-
 
 }
 
-//EOC: get out development logs, what did you learn? what did you build? what needs to be done?
-//Day two will be building basic functionality of a zoo
 

@@ -1,8 +1,6 @@
 
 public class Animal {
 
-
-    //what information an animal needs
     protected String species;
     protected String name;
     protected boolean hungry;
@@ -23,7 +21,7 @@ public class Animal {
 
     public Animal(){ //class question: how can I be as lazy as possible right now
         this.species = "giraffe";
-        this.name = "geoffrey";
+        this.name = "giraffy";
         this.hungry = true; //maybe this leads to future gameification?
         this.weight = 360.77;
         this.age = 12;
@@ -62,38 +60,6 @@ public class Animal {
         } else {
             System.out.println("*snores*");
         }
-    }
-
-
-    //discussion question: where are we putting our main method?
-    //can put here just for now for testing, or is there time to make a zoo?
-    //going forward, you will have classes that control the flow of the entire program. Often
-    //these contain the primary main method, but it's a good idea to have a main in all of your
-    //classes to more easily/immediately test local behaviors.
-
-    public static void main(String[] args) {
-        Animal geoff = new Animal();
-        System.out.println(geoff);
-
-        //String species, String name, boolean hungry, double weight, int age, String birthday
-        Animal wolf = new Animal("wolf", "big bad", true, 150.1, 7, "the dawn of time");
-        System.out.println(wolf);
-        System.out.println(wolf.isHungry());
-
-        //what else do we need to test?
-        wolf.setHungry(false);
-        //how do we know that this worked? --> change printData OR getter for hungry
-        //discuss: importance of having a plan - here we don't really know where we're going so
-        //we have to make decisions on the fly --> useful to discuss in dev log
-
-        //class consensus: add a getter
-        System.out.println(wolf.isHungry());
-
-        //non-getter or setter behavior
-        geoff.makeNoise();
-        geoff.setHungry(false);
-        geoff.makeNoise();
-
     }
 
 }
