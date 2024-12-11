@@ -1,3 +1,5 @@
+import java.util.LinkedList;
+
 public class Employee {
 
     private String name;
@@ -5,6 +7,8 @@ public class Employee {
     private boolean fullTime;
     private boolean manager;
     private int yearsWorked;
+    private static int employeeCount;
+    private static LinkedList<Employee> employees = new LinkedList<Employee>();
 
 
     public Employee(String name, int age, boolean fullTime, boolean manager, int yearsWorked){
@@ -64,7 +68,18 @@ public class Employee {
     public String toString(){
         return ("Employee " + name + " is " + age + " years old and has worked at this zoo for " + yearsWorked + " years");
     }
+    public static void addEmployee(Employee employee){
+        employees.add(employee);
+        employeeCount += 1;
+    }
 
+    public static LinkedList<Employee> getEmployees() {
+        return employees;
+    }
+
+    public static int getEmployeeCount() {
+        return employeeCount;
+    }
 }
 
 

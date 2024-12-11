@@ -1,3 +1,4 @@
+import java.util.LinkedList;
 
 public class Animal {
 
@@ -7,6 +8,9 @@ public class Animal {
     protected double weight;
     protected int age;
     protected String birthday;
+    protected static int animalCount = 0;
+    protected static LinkedList<Animal> animals = new LinkedList<Animal>();
+
 
     //question: do you need to fill in all instance variables for a class to work? can you only fill one?
 
@@ -61,6 +65,17 @@ public class Animal {
             System.out.println("*snores*");
         }
     }
+    public static void addAnimal(Animal animal){
+        animals.add(animal);
+        animalCount += 1;
+    }
 
+    public static int getAnimalCount() {
+        return animalCount;
+    }
+
+    public static LinkedList<Animal> getAnimals() {
+        return animals;
+    }
 }
 
